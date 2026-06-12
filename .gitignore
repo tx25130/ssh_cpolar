@@ -93,3 +93,11 @@ Thumbs.db
 *.jpeg
 *.gif
 SimulationData/
+
+# ========================
+# 深度学习输出（生成数据）
+# ========================
+FMCW_Radar_Target_Simulator/COCO/
+FMCW_Radar_Target_Simulator/checkpoints/
+FMCW_Radar_Target_Simulator/logs/
+FMCW_Radar_Target_Simulator/results/

@@ -42,6 +42,8 @@ c_0 = 299792458;
 
 plotAntennas = []; % List indices of RX antenna elements to be plotted in RD map [0: plot RD map, (1:8): Plot each antenna element, []: No Plot]
 Szenarios = 50; % SET NUMBER OF SZENARIOS
+Szenarios = 50; % SET NUMBER OF SZENARIOS
+
 duration = 0.5; % (sec) SET DURATION OF A SZENARIO  1 meas == 256*64µs = 0.0164 s
 
 %% Setup directories to save results
@@ -190,7 +192,8 @@ for meas = 1:Szenarios
     egoMotion = fmcw.egoMotion;
     
     % ParFor each measurement step in this scenario TIME: 2 SECONDS
-    parfor tidx = 1:floor(duration/tstep)
+    % parfor → for
+    for tidx = 1:floor(duration/tstep)
         %% Move Targets
         [MovedTargets, Label, rPlt] = move_TrajectoryPlanner(Traj, tidx, Targets, egoMotion);
         rPos = rPlt(:,1); %current radar position

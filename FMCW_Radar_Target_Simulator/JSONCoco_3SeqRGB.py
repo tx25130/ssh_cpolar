@@ -11,13 +11,13 @@ import scipy.io
 import os
 import cv2
 
-
-SimDataPath = './SimulationData0910_Train/'
+# 仿真数据路径
+SimDataPath = './SimulationData_20260612Train/'
 trainvalname = 'train2017'
 
 uniformBoxes = True
 writeJPGs = True
-drawBoxes = False
+drawBoxes = False #是否绘制标注框调试图
 
 
 def generate_annotation(TargetID, label, image_id, annotation_id):
