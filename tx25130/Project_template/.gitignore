@@ -1,25 +1,18 @@
 # 数据
-data/raw/
-data/interim/
-data/processed/
 *.bin
 *.mat
 *.hdf5
 *.h5
 *.csv
 
-# 临时
-dev/
-archive/
-*.tmp
-*.asv
-*.backup.*
-*~
+# 日志
+logs/
+*.log
 
 # 输出
 *.png
 *.pdf
-!assets/**
+
 
 # IDE
 .vscode/
