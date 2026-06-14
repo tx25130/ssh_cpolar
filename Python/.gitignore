@@ -1,0 +1,31 @@
+# 数据
+data/raw/
+data/interim/
+data/processed/
+*.bin
+*.mat
+*.hdf5
+*.h5
+*.csv
+
+# 临时
+dev/
+archive/
+*.tmp
+*.asv
+*.backup.*
+*~
+
+# 输出
+*.png
+*.pdf
+!assets/**
+
+# IDE
+.vscode/
+.idea/
+
+# 环境
+.venv/
+node_modules/
+__pycache__/
